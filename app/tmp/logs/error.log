@@ -1,0 +1,224 @@
+2017-08-03 11:24:08 Error: [MissingViewException] View file "Main/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Main/index.ctp',
+)
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MainController), Object(CakeRequest))
+#4 /var/www/reo02.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-08-03 11:26:43 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/reo02.com/app/Controller/MainController.php, line 6]
+2017-08-03 11:26:43 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/reo02....', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/reo02....', 6, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/reo02....', 6, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-03 11:27:04 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/reo02.com/app/Controller/MainController.php, line 6]
+2017-08-03 11:27:04 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/reo02....', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/reo02....', 6, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/reo02....', 6, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-03 11:27:05 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/reo02.com/app/Controller/MainController.php, line 6]
+2017-08-03 11:27:05 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/reo02....', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/reo02....', 6, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/reo02....', 6, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-03 11:28:13 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/reo02.com/app/Controller/MainController.php, line 6]
+2017-08-03 11:28:13 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/reo02....', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/reo02....', 6, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/reo02....', 6, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-03 12:23:34 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [/var/www/reo02.com/app/Controller/MainController.php, line 10]
+2017-08-03 12:23:34 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/reo02....', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/reo02....', 10, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/reo02....', 10, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-03 12:24:39 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/reo02.com/app/Controller/MainController.php, line 11]
+2017-08-03 12:24:39 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/reo02....', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/reo02....', 11, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/reo02....', 11, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-03 12:25:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Model.field DESC' at line 1
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Post), Array)
+#5 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/reo02.com/app/Controller/MainController.php(11): Model->find('all', Array)
+#7 [internal function]: MainController->index()
+#8 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MainController), Array)
+#9 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MainController), Object(CakeRequest))
+#11 /var/www/reo02.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-08-03 12:26:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Model.field DESC' at line 1
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Post), Array)
+#5 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/reo02.com/app/Controller/MainController.php(11): Model->find('all', Array)
+#7 [internal function]: MainController->index()
+#8 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MainController), Array)
+#9 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MainController), Object(CakeRequest))
+#11 /var/www/reo02.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-08-03 12:49:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order' in 'where clause'
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Post), Array)
+#5 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/reo02.com/app/Controller/MainController.php(10): Model->find('all', Array)
+#7 [internal function]: MainController->index()
+#8 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MainController), Array)
+#9 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MainController), Object(CakeRequest))
+#11 /var/www/reo02.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-08-03 12:50:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order' in 'where clause'
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Post), Array)
+#5 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/reo02.com/app/Controller/MainController.php(10): Model->find('all', Array)
+#7 [internal function]: MainController->index()
+#8 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MainController), Array)
+#9 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MainController), Object(CakeRequest))
+#11 /var/www/reo02.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-08-03 12:50:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order' in 'where clause'
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Post), Array)
+#5 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /var/www/reo02.com/app/Controller/MainController.php(10): Model->find('all', Array)
+#7 [internal function]: MainController->index()
+#8 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MainController), Array)
+#9 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MainController), Object(CakeRequest))
+#11 /var/www/reo02.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-08-03 14:15:36 Error: Fatal Error (4): syntax error, unexpected '[', expecting ',' or ';' in [/var/www/reo02.com/app/Model/Category.php, line 4]
+2017-08-03 14:15:36 Error: [FatalErrorException] syntax error, unexpected '[', expecting ',' or ';'
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/reo02....', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/reo02....', 4, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/reo02....', 4, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-03 14:30:13 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [/var/www/reo02.com/app/Controller/MainController.php, line 25]
+2017-08-03 14:30:13 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/reo02....', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/reo02....', 25, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/reo02....', 25, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-03 14:31:16 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [/var/www/reo02.com/app/Controller/MainController.php, line 25]
+2017-08-03 14:31:16 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/reo02....', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/reo02....', 25, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/reo02....', 25, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-03 14:32:12 Error: Fatal Error (4): syntax error, unexpected '?>', expecting function (T_FUNCTION) in [/var/www/reo02.com/app/Controller/MainController.php, line 25]
+2017-08-03 14:32:12 Error: [FatalErrorException] syntax error, unexpected '?>', expecting function (T_FUNCTION)
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/reo02....', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/reo02....', 25, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/reo02....', 25, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-03 14:32:56 Error: Fatal Error (4): syntax error, unexpected 'endforeach' (T_ENDFOREACH) in [/var/www/reo02.com/app/Controller/MainController.php, line 23]
+2017-08-03 14:32:56 Error: [FatalErrorException] syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/reo02....', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/reo02....', 23, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/reo02....', 23, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-08-03 14:51:10 Error: [MissingViewException] View file "Main/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Main/index.ctp',
+)
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MainController), Object(CakeRequest))
+#4 /var/www/reo02.com/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-08-03 15:09:52 Error: Fatal Error (4): syntax error, unexpected 'PHP_EOL' (T_STRING), expecting ',' or ';' in [/var/www/reo02.com/app/Controller/MainController.php, line 25]
+2017-08-03 15:09:52 Error: [FatalErrorException] syntax error, unexpected 'PHP_EOL' (T_STRING), expecting ',' or ';'
+Request URL: /main
+Stack Trace:
+#0 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/reo02....', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/reo02....', 25, Array)
+#2 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/reo02....', 25, Array)
+#3 /var/www/reo02.com/vendor/cakephp/cakephp/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
