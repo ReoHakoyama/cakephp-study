@@ -13,7 +13,7 @@ class MainController extends AppController {
         'Post.content like' => '%'.'内容'.'%'
       ],
       'order' => [
-        'Post.id asc'
+        'Post.id desc'
       ]
     ]);
     $this->set('posts', $posts);
