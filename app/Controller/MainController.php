@@ -3,7 +3,8 @@
 class MainController extends AppController {
 
   public $uses = [
-    'Post'
+    'Post',
+    'Category'
   ];
 
  /*
@@ -57,7 +58,11 @@ class MainController extends AppController {
 
   public function edit($id = null) {
     $post = $this->Post->findById($id);
-    $this->set('post', $post);
+    $categories = $this->Category->find('all',[
+      'contain' => false
+    ]);
+    $categoryList = Set::Combine($categories, '{n}.Category.id', '{n}.Category.name');
+    $this->set(compact('post','categoryList'));
     if ($this->request->is('get')) {
       $this->request->data = $post;
       return;

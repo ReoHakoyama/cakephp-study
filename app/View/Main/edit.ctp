@@ -4,9 +4,9 @@
 </head>
 
 <body>
-
 <?= $this->Form->create('Post'); ?>
 <?= $this->Form->input('title',['text']); ?>
+<?= $this->Form->select('category_id', ['options' => $categoryList]); ?>
 <?= $this->Form->input('content',['textarea']); ?>
 <?= $this->Form->end('投稿する'); ?>
 </body>
