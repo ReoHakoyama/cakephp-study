@@ -4,9 +4,10 @@ class MainController extends AppController {
 
   public $uses = [
     'Post',
-    'Category'
+    'Category',
+    'Comment'
   ];
-
+  public $helpers = array('Html', 'Form');
  /*
   public function index(){
     header("Content-type: text/html; charset=utf-8");
@@ -34,7 +35,16 @@ class MainController extends AppController {
    */
 
   public function index(){
-    $posts = $this->Post->find('all');
+    header("Content-type: text/html; charset=utf-8");
+    $this->Post->recursive = 2;
+    $posts = $this->Post->find('all',[
+      'contain' => ['Category', 'PostTag.Tag'],
+    ]);
+    foreach($posts as $post){
+      #$post['PostTag'][0]['Tag']['name'];
+      foreach($post['PostTag'] as $postTag){
+      }
+    }
     $this->set('posts', $posts);
   }
 
@@ -51,10 +61,27 @@ class MainController extends AppController {
   }
 
   public function view($id = null) {
-    $post = $this->Post->findById($id);
+    header("Content-type: text/html; charset=utf-8");
+    #$post = $this->Post->findByid($id);
+    $post = $this->Post->find('first',[
+      'contain' => ['Comment'],
+      'conditions' => ['Post.id' => $id]
+    ]);
+    #foreach ($posts as $post) {
+    #  foreach ($post['Comment'] as $comment){
+    #  }
+    #}
     $this->set('post', $post);
   }
 
+  public function addComment() {
+    if ($this->request->is('get')) { return; }
+    if($this->Comment->save($this->request->data)){
+      return $this->redirect(['action' => 'view', $this->request->data['Comment']['post_id']]);
+    }
+    $this->Session->setFlash('保存できませんでした');
+    return $this->render('view', $this->reqeust->data['Comment']['post_id']);
+  }
 
   public function edit($id = null) {
     $post = $this->Post->findById($id);
@@ -75,6 +102,24 @@ class MainController extends AppController {
       $this->Session->setFlash('保存できませんでした');
       return $this->render();
     }
+  }
+  /* 物理削除*/
+  public function old_delete($id = null) {
+    if ($this->request->is('get')) { return; }
+    $this->Session->setFlash(__( $this->Post->delete($id) ? '投稿を削除しました。' : '削除出来ませんでした' ));
+    return $this->redirect(['action' => 'index']);
+  }
+
+  /* 論理削除 */
+  public function delete($id = null) {
+    if ($this->request->is('get')) { return; }
+    $saveArray = [
+      'id' => $id,
+      'delete_flag' => true
+    ];
+    $this->Post->save($saveArray);
+    $this->Session->setFlash(__( $this->Post->save($saveArray) ? '投稿を削除しました。' : '削除出来ませんでした' ));
+    return $this->redirect(['action' => 'index']);
   }
 
 
