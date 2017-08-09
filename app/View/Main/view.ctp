@@ -4,7 +4,7 @@
 <?= $this->Html->link('一覧に戻る',['controller'=>'main', 'action'=>'index']); ?>
 </p>
 <h2>
-<?= $post['Post']['title']; ?>
+『 <?= $post['Post']['title']; ?> 』
 </h2>
 
 <h3>
@@ -13,7 +13,7 @@
 
 <h1>コメント</h1>
 <?php foreach ($post['Comment'] as $comment): ?>
-<?php echo $comment['comment']; ?>
+<?php echo $comment['comment'].'<br>'; ?>
 <?php endforeach; ?>
 <?php echo $this->Form->create('Comment', ['url' => ['controller' => 'main', 'action' => 'addComment']]); ?>
 <?= $this->Form->input('comment',['type' => 'textarea']); ?>

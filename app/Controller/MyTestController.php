@@ -2,18 +2,39 @@
 
 class MyTestController extends AppController {
 
-    public function index(){
-        $post = $this->Post->findById(1);
-        /* Post Tag をしたに Foreach で出す */
+  public $uses = [
+    'Post',
+    'PostTag',
+    ];
 
-        exit;
+  public function index(){
+    header("Content-type: text/html; charset=utf-8");
+    $this->Post->recursive = 2;
+    $post = $this->Post->find('first',[
+      'contain' => ['PostTag.Tag'],
+      'conditions' => ['Post.id' => 1],
+      'fields' => ['Post.id']
+    ]);
+    /* Post Tag をしたに Foreach で出す */
+    foreach($post['PostTag'] as $postTag){
+      var_dump($postTag);
     }
+    exit;
+  }
 
     public function loop(){
-        $posts = $this->Post->find('all');
+      header("Content-type: text/html; charset=utf-8");
+      $posts = $this->Post->find('all',[
+        'contain' => ['PostTag.Tag'],
+      ]);
         /* Post を loop で回して、1つずつ Post Tag をしたに Foreach で出す */
+      foreach ($posts as $post) {
+        foreach ($post['PostTag'] as $postTag) {
+        var_dump($postTag);
+        }
+      }
 
-        exit;
+       exit;
     }
 
 }
