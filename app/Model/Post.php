@@ -12,6 +12,10 @@ class Post extends AppModel {
     'PostTag'
   ];
 
+  public $hasOne = [
+    'PostRssLink'
+  ];
+
   public $actsAs = ['Containable'];
 
   public $validate = [

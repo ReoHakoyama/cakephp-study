@@ -3,7 +3,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <p>
-<?= $this->Html->link('記事を投稿する', ['Controller'=>'main', 'action'=>'add']); ?>
+<h4><?= $this->Html->link('記事を投稿する', ['controller'=>'main', 'action'=>'add']); ?></h4><br>
+<?= $this->Html->link('著者一覧',['controller' => 'my_test2', 'action' => 'index']); ?>
 </p>
 <table>
   <tr>

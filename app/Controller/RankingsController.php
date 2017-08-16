@@ -2,7 +2,7 @@
 class RankingsController extends AppController {
   public $uses = [
     'Post',
-    'Category'
+    'Category',
   ];
 
   public function index() {

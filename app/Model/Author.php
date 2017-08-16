@@ -5,7 +5,8 @@ class Author extends AppModel {
     'Post' => [
       'conditions' => ['Post.delete_flag' => false]
     ],
-    'AuthorFavoriteFood'
+    'AuthorFavoriteFood',
+    'AuthorFavoriteMusic'
   ];
 
   public $actsAs = ['Containable'];

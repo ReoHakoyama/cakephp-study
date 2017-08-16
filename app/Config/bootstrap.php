@@ -98,3 +98,25 @@ CakeLog::config('error', array(
 ));
 
 App::uses('dBug', 'Lib');
+
+$model = ROOT.DS.APP_DIR.DS.'Model'.DS;//Model だけ General と同一
+$controller = ROOT.DS.APP_DIR.DS.'Controller'.DS;
+$view = ROOT.DS.APP_DIR.DS.'View'.DS;
+
+$requestUri = (empty($_SERVER['REQUEST_URI'])) ? null : $_SERVER['REQUEST_URI'];
+if(preg_match("/admin/i", $requestUri)) {
+  $model = ROOT.DS.APP_DIR.DS.'Model'.DS;//Model だけ General と同一
+  $controller = ROOT.DS.APP_DIR.DS.'Controller'.DS.'Admin'.DS;
+  $view = ROOT.DS.APP_DIR.DS.'View'.DS.'Admin'.DS;
+}
+App::build(array(
+    'Controller' => array(
+      $controller
+    ),
+    'Model' => array(
+      $model
+    ),
+    'View' => array(
+      $view
+    ),
+));
