@@ -10,7 +10,10 @@
         </ul>
       </li>
       <li>
-        <a href="/admin/users/"><i class="fa fa-folder-open"></i>ユーザー一覧</a>
+        <a href="/admin/categories/"><i class="fa fa-folder-open"></i> 【カテゴリー】一覧</a>
+      </li>
+      <li>
+        <a href="/admin/users/"><i class="fa fa-folder-open"></i> 【ユーザー】一覧</a>
       </li>
     </ul>
 </div>
