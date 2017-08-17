@@ -1,13 +1,13 @@
 <?= $this->element('admin_header',['pageTitle' => 'ユーザー一覧']); ?>
-<table>
+<table class="table table-bordered table-hove">
   <tr>
-    <td>ユーザー名</td>
-    <td>作成日時</td>
+    <th>ユーザー名</th>
+    <th>作成日時</th>
   </tr>
   <?php foreach($users as $user): ?>
     <tr>
-      <td><?= $user['User']['username']; ?></td>
-      <td><?= $user['User']['created']; ?></td>
+      <th><?= $user['User']['username']; ?></th>
+      <td><?= date ('Y/m/d H:i',strtotime($user['User']['created'])); ?></td>
     </tr>
   <?php endforeach; ?>
 </table>
